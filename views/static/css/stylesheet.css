@@ -1,0 +1,356 @@
+body, #wrapper {
+  background-color: #eee;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  position: relative;
+}
+
+#wrapper{
+  position:absolute;
+  top:0px;
+  right:0px;
+  bottom:0px;
+  left:0px;
+  min-height: 100%; 
+  z-index: 10000;
+}
+
+th{
+  padding:0px;
+  font-family:Arial;
+  text-align:general;
+  vertical-align:bottom;
+  border:none;
+  white-space:nowrap;
+  background: white;
+}
+
+table {
+  margin: 0;
+}
+
+.boxMiddle{
+  color:windowtext;
+  text-align:left;
+  border-top:none;
+  border-right:.5pt solid black;
+  border-bottom:none;
+  border-left:.5pt solid black;
+}
+.boxBottom{
+  color:windowtext;
+  text-align:left;
+  border-top:none;
+  border-right:.5pt solid black;
+  border-bottom:.5pt solid black;
+  border-left:.5pt solid black;
+}
+.boxTop{
+  color:windowtext;
+  text-align:left;
+  border-top:.5pt solid black;
+  border-right:.5pt solid black;
+  border-bottom:none;
+  border-left:.5pt solid black;
+}
+
+.boxFull{
+  color:windowtext;
+  text-align:left;
+  border-top:.5pt solid black;
+  border-right:.5pt solid black;
+  border-bottom:.5pt solid black;
+  border-left:.5pt solid black;
+}
+
+.size12{
+  /*height:12.75pt;*/
+  min-height:1.0em;
+}
+.size24{
+  /*height:24.0pt;*/
+  height:2em;
+}
+.size34{
+  /*height:34.5pt;*/
+  height:2.75em;
+}
+.cellwidth{
+  min-width:206px;
+}
+
+.editbleText{
+  color:windowtext;
+  text-align:left;
+}
+
+.boldText{
+  font-weight:700;
+  text-align:left;
+}
+
+.underText{
+  text-decoration:underline;
+  text-underline-style:single;
+}
+
+.italicText{
+  font-style: oblique;
+}
+
+.strikethroughText{
+  text-decoration: line-through;
+}
+
+.darkGrayColor{
+  color:white;
+  /*font-size:14.0pt;*/
+  font-size:1.2em;
+  font-weight:700;
+  text-align:left;
+  vertical-align:middle;
+  background:#666666;
+}
+
+#currentDateColor{
+  color:white;
+  /*font-size:14.0pt;*/
+  font-size:1.2em;
+  font-weight:700;
+  text-align:left;
+  vertical-align:middle;
+  background:#cd7f32;
+}
+
+.lightGrayColor{
+  /*font-size:12.0pt;*/
+  font-size:1em;
+  font-weight:700;
+  text-align:left;
+  vertical-align:middle;
+  background:#EFEFEF;
+}
+
+.limeGreenColor{
+  color:windowtext;
+  text-align:left;
+  background:#B6D7A8;
+}
+
+.darkGreen{
+  color:windowtext;
+  text-align:left;
+  background:#A2C4C9;
+}
+.blueColor{
+  color:windowtext;
+  text-align:left;
+  background:#A4C2F4;
+}
+.orangeColor{
+  color:windowtext;
+  text-align:left;
+  background:#F9CB9C;
+}
+
+.purpleColor{
+  color:windowtext;
+  text-align:left;
+  background:#8E7CC3;
+}
+
+.whiteColor{
+  color:windowtext;
+  text-align:left;
+  background:white;
+}
+
+.grayColor{
+  color:windowtext;
+  text-align:left;
+  background:#F8F8F8;
+}
+
+.redColor{
+  color:windowtext;
+  text-align:left;
+  background:#EA9999;
+}
+
+.headerRow{
+  top: 0; /* Don't forget this, required for the stickiness */
+  position: sticky;
+  left: 0;
+  z-index: 10;
+}
+
+.firstCell{
+  z-index: 20;
+}
+
+.cellStayOnTop{
+  position: sticky;
+  left: 0;
+  z-index: 2;
+}
+
+#calenderTable{
+  padding: 0px;
+  border-spacing: 0px;
+  border: 1px solid black;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+#calenderTable td, tr{
+  overflow:hidden;
+  border:1px solid #e5e5e5;
+  border-color:rgba(0,0,0,.15);
+  border-width:0 1px 1px 0;
+  vertical-align:bottom;
+  line-height:inherit;
+  background-color:#fff;
+  padding:0 3px;
+  padding: 0px;
+  border-spacing: 0px;
+}
+
+#headerDates{
+  padding-right: 4px;
+  padding-left: 4px;
+  margin-right: 4px;
+  margin-left: 4px;
+  border-spacing: 0px;
+}
+
+#calenderTable th{
+  padding-right: 4px;
+  padding-left: 4px;
+  margin-right: 4px;
+  margin-left: 4px;
+  border-spacing: 0px;
+}
+
+#menu{
+  font-family:Arial;
+  display: none;
+  position: absolute;
+  padding: 10px;
+  background-color: #ddd;
+  border: 1px solid #000;
+}
+
+#menu p, label {
+  font: 1rem 'Fira Sans', sans-serif;
+}
+
+#menu input {
+  margin: 0.4rem;
+}
+
+#menu legend {
+  white-space: nowrap;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: fixed;
+  top: 0%;
+  width: auto;
+  height: 100%;
+  padding: 16px;
+  margin-top: -22px;
+  /*color: white;*/
+  color: rgba(2,2,2,0.1);
+  font-weight: bold;
+  font-size: 28px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  z-index: 40;
+  background-color: rgba(0,0,0,0.02);
+  display: flex;
+  align-items:center;
+  justify-content:center;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: rgba(255,255,255,1);
+}
+
+/* [THE BASE] */
+/* https://code-boxx.com/simple-css-error-messages/ */
+.floating{
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 1em;
+  z-index: 1000;
+}
+
+.bar {
+  padding: 10px;
+  margin: 10px;
+  color: #333;
+  background: #fafafa;
+  border: 1px solid #ccc;
+}
+
+/* [THE VARIATIONS] */
+.info {
+  color: #204a8e;
+  background: #c9ddff;
+  border: 1px solid #4c699b;
+}
+.success {
+  color: #2b7515;
+  background: #ecffd6;
+  border: 1px solid #617c42;
+}
+.warn {
+  color: #756e15;
+  background: #fffbd1;
+  border: 1px solid #87803e;
+}
+.error {
+  color: #ba3939;
+  background: #ffe0e0;
+  border: 1px solid #a33a3a;
+}
+
+/* [ICONS] */
+i.ico {
+  display: inline-block;
+  width: 20px;
+  text-align: center;  
+  font-style: normal;
+  font-weight: bold;
+}
+
+/* (D) CLOSE BUTTON */
+div.close {
+  position: absolute;
+  top: 30%;
+  right: 10px;
+  color: #888;
+  cursor: pointer;
+}
+
+#errorBar{
+  display:none;
+}
+
+#infoBar{
+  display:none;
+}

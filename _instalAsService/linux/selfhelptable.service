@@ -1,0 +1,21 @@
+[Unit]
+Description=self_help_table
+ConditionFileIsExecutable=/home/pi/self_help_table/self_help.py
+After=syslog.target network-online.target
+
+[Service]
+StartLimitInterval=5
+StartLimitBurst=10
+ExecStart=/home/pi/self_help_table/self_help.py
+
+WorkingDirectory=/home/pi/self_help_table/
+
+
+
+StandardOutput=file:/dev/null
+StandardError=file:/dev/null
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target

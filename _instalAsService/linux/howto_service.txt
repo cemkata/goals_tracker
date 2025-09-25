@@ -1,0 +1,7 @@
+Edit the selfhelptable.service file
+replace /home/pi/self_help_table with the path where this app is installed
+
+
+sudo mv selfhelptable.service /lib/systemd/system/selfhelptable.service
+sudo systemctl enable selfhelptable.service
+sudo systemctl start selfhelptable.service 

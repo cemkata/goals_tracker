@@ -1,0 +1,38 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.left{
+	/*background: #00A36C;*/
+}
+
+.right{
+	/*background: #9370DB;*/
+}
+
+#addCategory{
+	padding: 0px;
+	border-spacing: 0px;
+	border: 1px solid black;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+
+#addCategory td, tr{
+	padding: 0px;
+	border-spacing: 0px;
+}
+
+#addCategory th{
+	padding-right: 4px;
+	padding-left: 4px;
+	margin-right: 4px;
+	margin-left: 4px;
+	border-spacing: 0px;
+}
+
+.midCell{
+	text-align:center;
+}
